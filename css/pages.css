@@ -1,0 +1,195 @@
+@import url(signup.css);
+
+.homepage-body {
+    padding-top: 12px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.homepage-body > header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: -2px;
+}
+
+.homepage-body > header > h2 {
+    font-size: 24px;
+    letter-spacing: 0px;
+}
+
+.homepage-body > header > nav > button {
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homepage-body > main > .hero {
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.homepage-body > main > .hero > .hero-content {
+    padding: 0 2px;
+}
+
+.homepage-body > main > .hero > .hero-content > p {
+    font-size: 12px;
+    margin-bottom: 28px;
+}
+
+.homepage-body > main > .hero > .hero-content > h1 {
+    margin-bottom: 28px;
+    font-weight: 400;
+}
+
+.homepage-body > main > .hero > .hero-content > a {
+    background-color: #6f00ff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 5px;
+}
+
+.homepage-body > main > .hero > .marque {
+    height: 56px;
+    border-top: 1px solid rgb(221, 221, 221);
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.homepage-body > main > .section2 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 56px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.homepage-body > main > .section2 > .section2-header > h2 {
+    font-weight: 300;
+    font-size: 21px;
+    letter-spacing: 0.5px;
+}
+
+.homepage-body > main > .section2 > .section2-header > h2 > span {
+    color: #00000065;
+}
+
+.homepage-body > main > .section2 > .card-container {
+    margin-top: 36px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4px;
+}
+
+.homepage-body > main > .section2 > .card-container > .card {
+    margin-top: 24px;
+    padding: 20px 16px;
+    border-radius: 5px;
+    border: 1px solid rgb(221, 221, 221);
+    height: 425px;
+}
+
+.homepage-body > main > .section2 > .card-container > .card > .card-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.homepage-body
+    > main
+    > .section2
+    > .card-container
+    > .card
+    > .card-header
+    > h3 {
+    font-weight: 300;
+    font-size: 19px;
+    width: 200px;
+}
+
+.homepage-body
+    > main
+    > .section2
+    > .card-container
+    > .card
+    > .card-header
+    > button {
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #6f00ff;
+    font-weight: 700;
+    padding: 10px;
+    background-color: #e7e1ff;
+    flex-basis: 36px;
+    height: 36px;
+}
+
+.homepage-body > main > .section2 > .special-card {
+    margin-top: 150px;
+    padding: 36px 24px;
+    height: 550px;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 5px;
+    margin-bottom: 36px;
+}
+
+.homepage-body > main > .section2 > .special-card > h4 {
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.homepage-body > main > .section2 > .special-card > h4 > span {
+    font-weight: 400;
+}
+
+.homepage-body > main > .section2 > .special-card > h3 {
+    font-size: 26px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.homepage-body > main > .section2 > .special-card > a {
+    display: inline-flex;
+    background-color: #fff;
+    color: #6f00ff;
+    padding: 13px 20px;
+    border-radius: 5px;
+    align-items: center;
+    gap: 8px;
+}
+
+.homepage-body > main > .section2 > .special-card > a > span {
+    font-size: 10px;
+}
+
+.homepage-body > main > .section3 {
+    margin-left: -14px;
+    margin-right: -14px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    height: 800px;
+    background-color: #6f00ff;
+    color: #fff;
+}
+
+.homepage-body > main > .section3 > h3 {
+    font-weight: 400;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
