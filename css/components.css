@@ -1,0 +1,7 @@
+
+.blue-btn {
+  padding: 12px 18px;
+  margin: 0 15px 0 5px;
+  background-color: var(--stripe-blue);
+  color: #fff;
+}

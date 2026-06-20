@@ -1,0 +1,231 @@
+/* =================main section=========== */
+.background {
+  background: url(../assets/wave-fallback-desktop.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.first-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#hero-section {
+  margin: 0 325px;
+  padding: 36px 16px;
+  border-left: 1px solid rgb(206, 206, 206);
+  border-right: 1px solid rgb(206, 206, 206);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+#hero-section p {
+  font-family: "Google Sans", sans-serif;
+  font-weight: 550;
+  font-variation-settings: "GRAD" 0;
+
+  margin: 120px 0 10px 0;
+  grid-column-start: 2;
+  grid-column-end: 7;
+}
+
+#hero-section h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 440;
+  font-style: bold;
+  font-size: 45px;
+  margin: 25px 0 48px 0;
+  grid-column-start: 2;
+  grid-column-end: 11;
+  opacity: 0.8;
+}
+
+#hero-section .blue-text {
+  color: var(--stripe-blue);
+}
+
+#hero-section .hero-button {
+  text-decoration: none;
+  padding: 16px 20px;
+  border-radius: 4px;
+  font-family: "Google Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  grid-column-start: 2;
+  width: 142px;
+  margin-bottom: 122px;
+}
+
+/* =======logo section=========== */
+.logos-container {
+  display: flex;
+}
+
+.logos-container-marquee {
+  margin: 0 325px;
+  padding: 20px 0;
+  border: 1px solid rgb(206, 206, 206);
+  z-index: -3;
+}
+
+/* ===============second-container================ */
+
+#second-container {
+  margin: 0 325px;
+  padding: 36px 16px;
+  border-left: 1px solid rgb(206, 206, 206);
+  border-right: 1px solid rgb(206, 206, 206);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+#second-container h2 {
+  grid-column-start: 1;
+  font-family: "Google Sans", sans-serif;
+  font-weight: 500;
+  font-size: 35px;
+  grid-column-start: 1;
+  grid-column-end: 10;
+}
+
+#second-container span.grey-text {
+  color: var(--stripe-blue-2);
+}
+
+/* ============================SIGN UP======================== */
+#signup {
+  background-image: url(https://images.stripeassets.com/fzn2n1nzq965/3H6eXkY27vVqrCmUqnRXIV/4433388ea5e7e5f7c1d137caa3a6ba7d/billing_hero_wave_fallback_desktop.png);
+  background-color: rgb(247, 250, 252);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#signup .stripe-logo {
+  padding-top: 30px;
+  margin-left: 20px;
+}
+
+.form-container {
+  background-color: #fff;
+  margin: 20px auto;
+  padding: 30px 4px;
+  width: fit-content;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgb(204, 204, 204);
+}
+
+#signup form {
+  font-family: "Google Sans", sans-serif;
+}
+
+#signup fieldset {
+  border: none;
+}
+
+#signup legend {
+  color: #414552;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#signup form .google-signup {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(206, 206, 206);
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  justify-self: center;
+  width: 100%;
+  font-size: 15px;
+}
+
+#signup .or-div {
+  display: flex;
+  width: 100%;
+}
+
+#signup form hr {
+  display: inline-flex;
+  width: 140px;
+  color: rgb(221, 221, 221);
+}
+
+#signup .or-div span {
+  font-size: x-small;
+  font-weight: 400;
+  position: relative;
+  top: 5px;
+  color: rgb(129, 129, 129);
+}
+
+#signup label {
+  display: block;
+}
+
+#signup input,
+#signup select {
+  border-radius: 5px;
+  border: 1px solid rgb(206, 206, 206);
+  padding: 10px;
+  width: 95%;
+  display: flex;
+  justify-self: center;
+  margin-bottom: 10px;
+}
+
+#signup select {
+  width: 100%;
+}
+
+.create-acc-btn {
+  width: 100%;
+  border-radius: 10px;
+  border-color: transparent;
+  margin-top: 18px;
+  margin-bottom: 30px;
+}
+
+.form-container p {
+  margin: 0 auto;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  font-family: "Google Sans", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+}
+
+.form-container p a {
+  text-decoration: none;
+}
+
+#signup .bottom-links {
+  margin: 230px 0 40px 20px;
+}
+
+#signup .bottom-links a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Google Sans", sans-serif;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 728px) {
+  #signup {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6ULIH9ZAfcWL1LHsqoInXV85mjDPzr74emg&s);
+  }
+
+  .form-container {
+    width: 550px;
+    height: 630px;
+    backdrop-filter: blur(75px);
+  }
+
+  #signup .stripe-logo {
+    display: none;
+  }
+}
