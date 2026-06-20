@@ -1,0 +1,18 @@
+
+:root {
+    --min-width-for-desktop: 900px;
+    --primary-color: azure;
+    --secondary-color: #533AFD;
+}
+
+
+.light-text-in-heading{
+    color: #64748D;
+}
+
+img {
+    object-fit:cover;
+}
+.white-heading-text {
+    color: white;
+}

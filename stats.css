@@ -1,0 +1,51 @@
+
+.stats-nums-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    color: white;
+    place-items: center;
+}
+.stats-hero-heading {
+    font-size: clamp(1rem, 10vw, 4rem);
+    text-wrap: pretty;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+.stats-showcase {
+    background-color: #2f238c;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.stats-topic {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.stats-media-container {
+    background-image: url(assets/Screenshot\ from\ 2026-06-20\ 15-06-27.png);
+    height: 400px;
+}
+@media (min-width:930px) {
+    .stats-nums-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+    .stats-media-container {
+        background-image: url(assets/Screenshot\ from\ 2026-06-20\ 15-24-56.png);
+        background-size: 100vw;
+        /* background-position: right 225px bottom 0px; */
+        background-repeat: no-repeat;
+        height:500px;
+    }
+    .stats-showcase {
+        background-color: #f8fafd;
+    }
+    .stats-nums-container , .stats-hero-heading{
+        color: black;
+    }
+}

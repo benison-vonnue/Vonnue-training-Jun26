@@ -1,0 +1,44 @@
+
+
+button {
+    text-wrap: nowrap;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.primary-btn {
+    background-color: var(--secondary-color);
+    color: white;
+}
+.secondary-btn {
+    background-color: var(--primary-color);
+    color: chocolate;
+}
+.third-btn {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 2rem;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.third-btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+.mobile-width-expand-btn {
+    width: auto;
+    flex-shrink: 0;
+}
+.session-btn {
+    color: var(--secondary-color);
+}
+@media (min-width:630px) {
+    .mobile-width-expand-btn {
+        width: 150px;
+    }
+}

@@ -1,0 +1,221 @@
+
+
+.card {
+    border: 1px ridge;
+    margin: 15px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.card-heading {
+    text-wrap: balance;
+    padding-right: 15px;
+}
+.card-top-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-content-container {
+    width: 100%;
+    height: 500px;
+    background-color: antiquewhite;
+}
+
+
+
+
+.services-showcase {
+    display: grid;
+    grid-template-areas: 
+    'heading'
+    'featured1'
+    'normal1'
+    'normal2'
+    'normal3'
+    'normal4'
+    'featured2';
+}
+.session-card {
+    height: 650px;
+    background-image: url(assets/sessions-2026-on-demand-bg-mobile.png);
+    background-size: 90vw;
+}
+.stripe-session-legend {
+    color: white;
+}
+.services-showcase-heading {
+    grid-area: heading;
+}
+.card:nth-child(2) {
+    grid-area: featured1;
+    background-image: url(assets/Screenshot\ from\ 2026-06-20\ 13-09-50.png);
+    background-size: 160vw;
+    height: 500px;
+    background-position: bottom 0px;
+}
+.card:nth-child(3) {
+    grid-area: normal1;
+    background-image: url(assets/Screenshot\ from\ 2026-06-20\ 13-10-06.png);
+    background-size: 83vw;
+    height: 500px;
+    background-position: bottom 0px;
+}
+.card:nth-child(4) {
+    grid-area: normal2;
+    background-image: url(assets/Screenshot\ from\ 2026-06-20\ 13-10-25.png);
+    background-size: 83vw;
+    height: 500px;
+    background-position: bottom 0px;
+}
+.card:nth-child(5) {
+    grid-area: normal3;
+    background-image: url(assets/Screenshot\ from\ 2026-06-20\ 13-10-39.png);
+    background-size: 83vw;
+    height: 500px;
+    background-position: bottom 0px;
+}
+.card:nth-child(6) {
+    grid-area: normal4;
+    background-image: url(assets/Screenshot\ from\ 2026-06-20\ 13-10-53.png);
+    background-size: 83vw;
+    height: 500px;
+    background-position: bottom 0px;
+}
+.card:nth-child(7) {
+    grid-area: featured2;
+    background-image: url(assets/Screenshot\ from\ 2026-06-20\ 13-34-07.png);
+    background-size: 182vw;
+    height: 500px;
+    /* background-position: right 0px; */
+}
+
+@media (min-width:630px) {
+    .services-showcase {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 0fr repeat(3, 1fr);
+        grid-template-areas: 
+        'heading heading'
+        'featured1 normal1'
+        'normal2 normal3'
+        'normal4 featured2';
+    }
+    .session-card {
+        height: 400px;
+        background-image: url(assets/sessions-2026-on-demand-bg.png);
+        background-size: 190vw;
+        background-position: right -200px bottom 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .stripe-session-legend {
+        align-self: flex-end;
+        order: 3;
+        margin-top: 250px;
+        margin-right: 30px;
+    }
+    .card:nth-child(2) {
+        background-size: 160vw;
+    }
+    .card:nth-child(3) {
+        grid-area: normal1;
+        background-image: url(assets/Screenshot\ from\ 2026-06-20\ 13-10-06.png);
+        background-size: 83vw;
+        height: 500px;
+        background-position: bottom 0px;
+    }
+    .card:nth-child(4) {
+        grid-area: normal2;
+        background-image: url(assets/Screenshot\ from\ 2026-06-20\ 13-10-25.png);
+        background-size: 83vw;
+        height: 500px;
+        background-position: bottom 0px;
+    }
+    .card:nth-child(5) {
+        grid-area: normal3;
+        background-image: url(assets/Screenshot\ from\ 2026-06-20\ 13-10-39.png);
+        background-size: 83vw;
+        height: 500px;
+        background-position: bottom 0px;
+    }
+    .card:nth-child(6) {
+        grid-area: normal4;
+        background-image: url(assets/Screenshot\ from\ 2026-06-20\ 13-10-53.png);
+        background-size: 83vw;
+        height: 500px;
+        background-position: bottom 0px;
+    }
+    .card:nth-child(7) {
+        grid-area: featured2;
+        background-image: url(assets/Screenshot\ from\ 2026-06-20\ 13-34-07.png);
+        background-size: 182vw;
+        height: 500px;
+        /* background-position: right 0px; */
+    }
+}
+
+@media (min-width:930px) {
+    .services-showcase {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 0fr epeat(3, 1fr);
+        grid-template-areas: 
+        'heading heading heading'
+        'featured1 featured1 normal1'
+        'normal2 normal3 normal4'
+        'featured2 featured2 featured2';
+    }
+
+    .session-card {
+        background-size: 100vw;
+        background-position: right -50px bottom 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .stripe-session-legend {
+        align-self: flex-end;
+        order: 3;
+        margin-top: 250px;
+        margin-right: 30px;
+    }
+    .card:nth-child(2) {
+        background-size: 70vw;
+    }
+    .card:nth-child(3) {
+        grid-area: normal1;
+        background-image: url(assets/Screenshot\ from\ 2026-06-20\ 13-10-06.png);
+        background-size: 29vw;
+        height: 500px;
+        background-position: bottom 0px;
+    }
+    .card:nth-child(4) {
+        grid-area: normal2;
+        background-image: url(assets/Screenshot\ from\ 2026-06-20\ 13-10-25.png);
+        background-size: 29vw;
+        height: 500px;
+        background-position: bottom 0px;
+    }
+    .card:nth-child(5) {
+        grid-area: normal3;
+        background-image: url(assets/Screenshot\ from\ 2026-06-20\ 13-10-39.png);
+        background-size: 29vw;
+        height: 500px;
+        background-position: bottom 0px;
+    }
+    .card:nth-child(6) {
+        grid-area: normal4;
+        background-image: url(assets/Screenshot\ from\ 2026-06-20\ 13-10-53.png);
+        background-size: 29vw;
+        height: 500px;
+        background-position: bottom 0px;
+    }
+    .card:nth-child(7) {
+        grid-area: featured2;
+        background-image: url(assets/Screenshot\ from\ 2026-06-20\ 13-34-07.png);
+        background-size: 90vw;
+        height: 500px;
+        /* background-position: right 0px; */
+    }
+}

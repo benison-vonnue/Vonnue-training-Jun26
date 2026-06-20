@@ -1,0 +1,10 @@
+.feature-showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+.feature-container {
+    border-top: 1px ridge;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,54 @@
+
+.page-nav-hero-container {
+    background-image: url(assets/wave-fallback-tablet.webp);
+    background-position: right -150px bottom 0px;
+    background-repeat: repeat;
+    background-size:200vw;
+    /* background-color: aqua; */
+}
+
+.hero-top-container {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+    height: 200px;
+    justify-content: space-between;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+.optional-hero-heading {
+    color: #000EFF80;
+    display: none;
+}
+.hero-section-brands-scroll {
+    background-color: azure;
+    height: 100px;
+    width: 100%;
+}
+
+@media (min-width:630px) {
+    .optional-hero-heading {
+        display: unset;
+    }
+    .page-nav-hero-container {
+        background-image: url(assets/wave-fallback-tablet.webp);
+        background-position: right -5px bottom 10px;
+        background-repeat: repeat;
+        background-size: 120vw;
+        /* background-color: aqua; */
+    }
+}
+@media (min-width:900px) {
+    .hero-top-container {
+        padding-left: 15vw;
+        padding-right: 35vw;
+    }
+    .page-nav-hero-container {
+        background-image: url(assets/wave-fallback-tablet.webp);
+        background-position: right -5px bottom 10px;
+        background-repeat: repeat;
+        background-size: 100vw;
+        /* background-color: aqua; */
+    }
+}
