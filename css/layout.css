@@ -1,0 +1,73 @@
+button {
+  background: transparent;
+  border: none;
+  color: #1c314a;
+  font-family: var(--font-global);
+  font-size: clamp(8px, 2vw, 14px);
+  font-weight: 400;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.grayHeader {
+  color: #64748d;
+}
+
+.blackHeader {
+  color: black;
+}
+
+.featureGrid {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 676px 676px 450px;
+  grid-template-areas:
+    "item1 item1 item2"
+    "item3 item4 item5"
+    "item6 item6 item6";
+  gap: 16px;
+  width: 66dvw;
+  padding-bottom: 96px;
+}
+
+.card {
+  border: 1px solid #e5edf5;
+  padding: 18px;
+  border-radius: 4px;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  height: 58px;
+  align-items: center;
+}
+
+h4 {
+  font-size: 26px;
+  font-weight: 500;
+  color: black;
+  margin: 0;
+}
+
+.imgContainer {
+  width: 36px;
+  height: 36px;
+  background-color: #f5f5ff;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover {
+  border: 1px solid pink;
+  scale: 1.006;
+  box-shadow: 1px 1px 5px pink;
+  .imgContainer {
+    scale: 1.35;
+    background-color: var(--color-button);
+  }
+}

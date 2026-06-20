@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&family=Atomic+Age&family=Bebas+Neue&family=Black+Ops+One&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+:root {
+  --color-primary: #ffffff;
+  --color-secondry: #f8fafd;
+  --color-margin: #e5edf5;
+  --color-button: #533afd;
+  --color-fade: #6e7680;
+  --font-global: Google Sans;
+  --color-text: #1c314a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-primary);
+  font-family: var(--font-global);
+  margin: 0;
+  background-image: url(/Assets/wave-fallback-desktop.png);
+  background-repeat: no-repeat;
+}
+
+.signIn {
+  position: absolute;
+  top: 15%;
+  left: 35%;
+  width: 540px;
+  height: 611px;
+  border: 1px solid #e5edf5;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(165, 165, 165, 0.425);
+  padding: 48px 64px 32px 64px;
+}
+
+.signIn h3 {
+  color: black;
+  font-size: 25px;
+}
+
+label {
+  font-family: var(--font-global);
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 3px;
+}
+
+input {
+  width: 412px;
+  height: 44px;
+  background: white;
+  border: 1px solid var(--color-margin);
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+#remember {
+  width: 16px;
+  height: 16px;
+}
+
+.signInwith {
+  font-size: 12px;
+}
+
+.signInwith::after {
+  content: "";
+}
+
+.google {
+  border: 1px solid black;
+  align-self: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.center button {
+  border: 1px solid black;
+  border-radius: 4px;
+  height: 32px;
+}
+
+.signInwith {
+  margin-top: 14px;
+  margin-bottom: 16px;
+}

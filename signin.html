@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/signin.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Sign In</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbarContainer">
+        <div class="navbar">
+          <div class="logo">
+            <img
+              src="/Assets/stripeLogo.svg"
+              alt=""
+              logo
+              style="width: 60px; height: 25px"
+            />
+          </div>
+            </div>
+        </div>
+      </div>
+    </header>
+    <div class="signIn">
+        <div class="signInHeader"><h3>Sign in to your account</h3>
+            <form action="/submit" method="POST">
+                <label for="Email">Email</label>
+                <input type="Email" id="Email">
+                 <label for="Password">Password</label>
+                <input type="password" id="Password">
+                <input type="checkbox" id="remember"><label for="remember">Remember me on this device</label>
+                <div class="center"><button>Submit</button></div>
+            </form>
+            <div class="center"><div class="signInwith">Sign in with</div></div>
+            <div class="center"><button id="google"><img src="/Assets/google.png" alt="google" height="25px"></button></div>
+        </div>
+    </div>
+  </body>
+</html>

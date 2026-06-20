@@ -1,0 +1,85 @@
+header {
+  width: 100dvw;
+  height: 78px;
+  border-bottom: 1px solid var(--color-margin);
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(4px);
+}
+
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 68dvw;
+  padding: 10px 16px;
+  border-radius: 4px;
+}
+
+.navbarContainer:hover {
+  box-shadow: 2px 2px 60px rgba(175, 175, 175, 0.76);
+  backdrop-filter: blur(10px);
+  background-color: white;
+  .userActions .signIn button {
+    border: 1px solid var(--color-button);
+    color: var(--color-button);
+    font-weight: 500;
+  }
+}
+
+.navbar {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar nav button {
+  font-weight: 500;
+}
+
+.userActions {
+  display: flex;
+  gap: 8px;
+}
+
+.userActions .signIn button {
+  color: rgba(255, 173, 65, 0.74);
+  background-color: var(--color-primary);
+  border-radius: 4px;
+  width: 84px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+
+.signIn button a {
+  text-decoration: none;
+  color: rgb(253, 164, 179);
+}
+
+.userActions .signIn button:hover {
+  border: 1px solid var(--color-button);
+  color: var(--color-button);
+}
+
+.userActions .signUp button {
+  background: var(--color-button);
+  color: var(--color-primary);
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.buttonText {
+  margin-right: 6px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}

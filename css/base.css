@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&family=Atomic+Age&family=Bebas+Neue&family=Black+Ops+One&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+:root {
+  --color-primary: #ffffff;
+  --color-secondry: #f8fafd;
+  --color-margin: #e5edf5;
+  --color-button: #533afd;
+  --color-fade: #6e7680;
+  --font-global: Google Sans;
+  --color-text: #1c314a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-primary);
+  font-family: var(--font-global);
+  margin: 0;
+  background-image: url(/Assets/wave-fallback-desktop.png);
+  background-repeat: no-repeat;
+}
+
+.heroContainer,
+.featuresContainer,
+.video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  height: 75dvh;
+  width: 100dvw;
+  position: relative;
+}
+
+.featuresContainer {
+  background-color: white;
+}
+
+.hero,
+.features,
+.videoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 36px 16px;
+  height: 75dvw;
+  width: 68dvw;
+  border-left: 1px solid var(--color-margin);
+  border-right: 1px solid var(--color-margin);
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+  padding-left: 5dvw;
+}
+
+.gdpCount {
+  color: black;
+  font-family: var(--font-global);
+  font-size: clamp(8px, 1vw, 14px);
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.tagline,
+.tagline2 {
+  font-size: clamp(25px, 2.4vw, 80px);
+  padding-right: clamp(50px, 2vw, 20vw);
+  font-weight: 480;
+  word-spacing: -3px;
+}
+
+.tagline2 {
+  color: #707982;
+}
+
+.inviteButton {
+  margin-top: 40px;
+  padding-left: 5dvw;
+  height: 48px;
+}
+
+.inviteButton button {
+  background: var(--color-button);
+  color: var(--color-primary);
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.heroScroll {
+  height: 9dvw;
+  width: 100dvw;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  border-top: 1px solid var(--color-margin);
+  border-bottom: 1px solid var(--color-margin);
+  border-left: 1px solid var(--color-margin);
+  border-right: 1px solid var(--color-margin);
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 68dvw;
+  background-color: white;
+}
+
+.heroScroll div {
+  animation: move 10s infinite linear;
+}
+
+h3 {
+  font-size: clamp(16px, 2vw, 32px);
+  font-weight: 400;
+  color: #64748d;
+}
+
+.featuresContainer,
+.features {
+  height: 219dvh;
+  border-top: 1px solid var(--color-margin);
+  background-color: #f8fafd;
+}
+
+.features {
+  justify-content: flex-start;
+}
+
+.featurHeader {
+  width: 45dvw;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+#item1 {
+  grid-area: item1;
+  background: url(/Assets/GridItem1.png);
+  background-position: center;
+  background-size: cover;
+}
+
+#item2 {
+  grid-area: item2;
+  background: url(/Assets/GridItem2.png);
+  background-position: center;
+  background-size: cover;
+}
+
+#item3 {
+  grid-area: item3;
+  background: url(/Assets/GridItem5.png);
+  background-position: center;
+  background-size: cover;
+}
+
+#item4 {
+  grid-area: item4;
+  background: url(/Assets/GridItem4.png);
+  background-position: center;
+  background-size: cover;
+}
+
+#item5 {
+  grid-area: item5;
+  background: url(/Assets/GridItem3.png);
+  background-position: center;
+  background-size: cover;
+}
+
+#item6 {
+  grid-area: item6;
+  background: url(/Assets/GridItem6.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.videoContainer {
+  height: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 18px 30px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.video {
+  padding-left: 16px;
+  padding-right: 16px;
+  color: var(--color-primary);
+  height: 560px;
+}
+
+.videoHeader {
+  font-size: 48px;
+  font-weight: 400;
+}
+
+#videobtn {
+  background-color: var(--color-primary);
+  color: var(--color-button);
+  margin-top: 16px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+
+.videoContent {
+  background: url(/Assets/stripeSessions.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 1232px;
+  padding: 18px 13px;
+  border-radius: 10px;
+}
+
+.videoCredits {
+  margin-top: 150px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-600px);
+  }
+}
