@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-style: normal;
+}
+a,
+h1,
+h2,
+p {
+    overflow-wrap: break-word;
+}
+@font-face {
+    font-family: sohne-bold;
+    src: url("../assets/fonts/Sohne.cb178166.woff2");
+}
+@font-face {
+    font-family: sohne-medium;
+    src: url("../assets/fonts/SourceCodePro-Medium.f5ba3e6a.woff2");
+}
+
+:root {
+    --color-button-primary: #533afd;
+    --font-main: "sohne-bold";
+    --font-medium: "sohne-medium";
+    --color-p: rgb(6, 27, 49);
+    --color-p2: rgb(100, 116, 141);
+    --color-btn-border: rgb(229, 237, 245);
+    --expand-btn-bg: #f5f5ff;
+}
+body {
+    font-family: var(--font-main);
+}
+.expand-icon path {
+    fill: var(--color-button-primary);
+}
