@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.bg {
+  background-image: url("https://images.stripeassets.com/fzn2n1nzq965/115d4Vd5LVAsqFGDR1ClAv/0ceb2c44a7a7182cd624262420af7544/wave-fallback-desktop.png");
+  background-position: right-bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: right;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 20rem 10px 20rem;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+}
+header:hover {
+  background: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.header-left {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.logo img {
+  width: 100px;
+  height: 68px;
+}
+.logo img:hover {
+  fill: grey;
+}
+.nav-bar {
+  display: flex;
+  gap: 16px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.nav-item {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: black;
+  font-size: 14px;
+  cursor: pointer;
+}
+.nav-group a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  gap: 16px;
+  margin-right: 1rem;
+}
+.login-btn {
+  background-color: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid transparent;
+  outline: none;
+  padding: 5px 10px 5px 10px;
+  border-radius: 6px;
+  margin-right: 10px;
+  color: #e6726b;
+  font-size: 16px;
+  width: 100px;
+  height: 43px;
+}
+.login-btn:hover {
+  border: 1px solid #4032c8;
+  color: #4032c8;
+  font-weight: 550;
+}
+.contact-sales {
+  background-color: #4032c8;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid transparent;
+  outline: none;
+  padding: 10px 10px 10px 10px;
+  border-radius: 6px;
+  margin-right: 10px;
+  color: white;
+  font-size: 16px;
+}
+.contact-sales:hover span {
+  display: none;
+}
+.content-sale:hover::after {
+  content: "\f061";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+.hamburger {
+  display: none;
+}
+.page-content {
+  margin: 0px 20rem auto 20rem;
+  border-right: 1px solid #e2e1e1;
+  border-left: 1px solid #e2e1e1;
+}
+.hero-section {
+  position: static;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 4rem;
+  margin-top: 8rem;
+}
+.gdp-text {
+  color: #061b31;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 30px;
+}
+.gdp-text span {
+  color: #64748d;
+}
+.hero-text {
+  width: 50vw;
+  font-size: 3rem;
+  line-height: 1.2;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 540;
+  padding-bottom: 20px;
+}
+.hero-text span {
+  background: -webkit-linear-gradient(#eee, #383838);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.request-an-invite-btn {
+  width: 12vw;
+  height: 58px;
+  border-width: 1px;
+  background: #4032c8;
+  border-radius: 8px;
+  color: white;
+  font-size: 18px;
+  font-weight: 550px;
+}
+.customer-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 1fr));
+  grid-auto-flow: column;
+  margin-top: 50px;
+  border-top: 1px solid #e2e1e1;
+  border-bottom: 1px solid #e2e1e1;
+  overflow-x: scroll;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  scrollbar-width: none;
+  animation: marquee 20s linear infinite;
+}
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-50%, 0);
+  }
+}
+main {
+  margin: 0px 20rem auto 20rem;
+  border-right: 1px solid #e2e1e1;
+  border-left: 1px solid #e2e1e1;
+}
+.text {
+  width: 50vw;
+  font-size: 1.3rem;
+  line-height: 1.2;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-top: 8rem;
+}
+.text span {
+  background: -webkit-linear-gradient(#eee, #333);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
