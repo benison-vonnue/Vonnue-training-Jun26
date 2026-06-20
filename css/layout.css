@@ -1,0 +1,187 @@
+.hero-bg {
+  margin-top: -8px;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: right;
+  background-image: url("https://images.stripeassets.com/fzn2n1nzq965/115d4Vd5LVAsqFGDR1ClAv/0ceb2c44a7a7182cd624262420af7544/wave-fallback-desktop.png?w=2784&fm=webp&q=60");
+}
+header {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid var(--border-color);
+}
+.navbar {
+  display: flex;
+  gap: 460px;
+  padding: 3px;
+  border-radius: 5px;
+  transition: background-color 0.5s ease;
+  transition: box-shadow 0.5s ease;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+.navbar:hover {
+  background-color: white;
+  box-shadow: 1px 1px 20px rgb(213, 211, 211);
+}
+.navbar:hover .sign-in-button button {
+  border: 1px solid rgb(209, 210, 209);
+  color: var(--background-color);
+  background-color: white;
+}
+.nav-left {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+.nav-links {
+  display: flex;
+  gap: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+.nav-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 10px;
+  margin-right: 10px;
+}
+.nav-titles {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 5px;
+}
+.sign-in-button {
+  border: none;
+  border-radius: 5px;
+  transition: border 1s ease;
+  transition: color 1s ease;
+}
+.contact-sales-button {
+  display: flex;
+  border-radius: 5px;
+}
+.hero-container {
+  height: 660px;
+  margin-left: 300px;
+  margin-right: 300px;
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+}
+.hero-top {
+  padding: 11% 10% 11% 10%;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.hero-bottom {
+  display: grid;
+  grid-template-columns: repeat(16, 150px);
+  grid-template-rows: 72px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-left: 300px;
+  margin-right: 300px;
+  scrollbar-width: none;
+  border: 1px solid var(--border-color);
+  margin-top: -5px;
+  column-gap: 75px;
+}
+.main-top {
+  background-color: #f8fafd;
+  width: 100%;
+  height: auto;
+}
+.main-top-border {
+  display: flex;
+  flex-direction: column;
+  margin-left: 300px;
+  margin-right: 300px;
+  border: 1px solid var(--border-color);
+  padding: 96px 16px;
+  gap: 64px;
+}
+.main-top-text {
+  font-size: 1.6rem;
+  width: 700px;
+}
+.main-text-span {
+  color: #64748d;
+}
+.main-top-item1 {
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url("https://images.stripeassets.com/fzn2n1nzq965/vYmk6v8n7oDAwbDpwhjV6/846f9b3e214549b8f14e2b8c8cfe9343/payment-bento-background.jpg?w=1720&fm=webp&q=80");
+  width: 820px;
+  height: 676px;
+  border-radius: 5px;
+  gap: 55px;
+  border: 1 px solid white;
+  box-shadow: none;
+  transition:
+    border 0.5s ease,
+    box-shadow 0.5 ease;
+}
+.main-top-item1:hover,
+.main-top-item2:hover {
+  border: 2px solid var(--border-color);
+  box-shadow: 1px 1px 20px var(--border-color);
+}
+
+.main-top-item2 {
+  background-image: linear-gradient(
+    0deg,
+    rgba(141, 124, 254, 1) 7%,
+    rgba(228, 143, 211, 1) 31%,
+    rgba(251, 200, 145, 1) 53%,
+    rgba(255, 255, 255, 1) 78%
+  );
+  width: 400px;
+  height: 676px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 5px;
+  box-shadow: none;
+  transition:
+    border 0.5s ease,
+    box-shadow 0.5 ease;
+}
+.main-top-container1 {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  height: 600px;
+}
+.main-top-item1-head,
+.main-top-item2-head {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  margin: 20px 20px 20px 20px;
+}
+
+.main-top-item1-body {
+  display: flex;
+}
+.main-top-item2-body {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 30px;
+}

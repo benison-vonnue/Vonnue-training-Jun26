@@ -1,0 +1,29 @@
+@media screen and (max-width:768px){
+    .hero-bg{
+        width: 172vw;
+        height: 650px;
+        background-size: 100%;
+        background-position: center;
+    }    
+    .hero-container{
+        margin: 0;
+    }
+    .nav-links,.nav-right{
+        display: none;
+    }
+    .hamburger{
+        display: inline;
+    }
+    .nav-logo{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+        gap: 1000px;
+        
+    }
+    .header,.navbar{
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,27 @@
+@import url(layout.css);
+@import url(components.css);
+@import url(pages.css);
+
+@font-face {
+  font-family: "stripefont1";
+  src: url("fonts/Sohne.cb178166.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "stripefont2";
+  src: url("fonts/SourceCodePro-Medium.f5ba3e6a.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  font-family: "stripefont2", sans-serif;
+  color: var(--text-color);
+}
+:root {
+  --background-color: #533afd;
+  --text-color: #0a2540;
+  --border-color: rgb(238, 238, 238);
+}
