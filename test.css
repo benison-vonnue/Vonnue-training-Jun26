@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+    font-family: sohne-var;
+    src: url(/mkt-ssr-statics/assets/_next/static/media/Sohne.cb178166.woff2) format("woff2-variations");
+    font-weight: 1 1000;
+    font-display: block;
+}
+
+@font-face {
+    font-family: "Sohne-Double";
+    src: url("https://b.stripecdn.com/mkt-ssr-statics/assets/_next/static/media/SourceCodePro-Medium.f5ba3e6a.woff2") format("woff2");
+}
+
+
+/* Layout */
+.header-section {
+    box-sizing: border-box;
+  margin: 0px 71px;
+  padding: 6px 18px;
+  height: 76px;
+}
+
+ .nav-bar {
+  display: flex;
+  padding: 10px 16px;
+  align-items: center;
+  gap: 28px;
+
+}
+
+.nav-section{
+    display: flex;
+    gap: 24px;
+  
+    font-family: "sohne-var";
+}
+
+.products-section{
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    font-family: Sohne-Double;
+    font-size: 14px;
+    font-weight: 400;
+    gap:4px;
+}
+
+.nav-button{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 498px;
+}
+/*
+.left-section {
+  display: flex;
+   
+}
+
+.sign-in {
+  background-color: white;
+  padding: 12px 15px;
+  font-size: 14px;
+  color: #ff8c00;
+  border-radius: 10px;
+  border: none;
+}
+
+.contact-sales {
+  background-color: #533afd;
+  padding: 15px 20px;
+  color: white;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.nav-section {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  font-family: "Sohne-Double";
+  font-weight: 400;
+} */
+
+
+/* .hero-section{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0px 87px;
+    padding: 36px 16px ;
+    width: 1266px;
+    border: 1px ;
+    height: 666px;
+}
+.hero-content{
+    margin: 0 70px;
+} */

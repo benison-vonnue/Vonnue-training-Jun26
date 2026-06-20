@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  padding: 0 16px;
+  height: 76px;
+}
+
+.logo {
+  box-sizing: border-box;
+  padding: 25.5px 16px 0 18px;
+  width: 1266px;
+}
+
+.sign-in-body {
+  display: flex;
+  justify-content: center;
+  margin: 0 180px;
+  height: 860.656px;
+}
+
+.body-layout {
+  box-sizing: border-box;
+  padding: 86.84px 0;
+  width: 540px;
+  height: 100%;
+
+  box-shadow: rgba(0, 0, 0, 0);
+}
+
+.body-content {
+  font-family:
+    sohne-var,
+    sohne-woff,
+    Helvetica Neue,
+    Arial,
+    sans-serif !important;
+  padding: 48px 64px 32px 64px;
+  gap: 24px;
+}
+
+.create-account {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  font-family:
+    sohne-var,
+    sohne-woff,
+    Helvetica Neue,
+    Arial,
+    sans-serif !important;
+}
+.background {
+  border: 0.1px solid grey;
+  border-radius: 12px;
+}
+
+footer {
+  margin-top: 26.344px;
+  height: 76px;
+}
+.footer-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0 100px;
+  padding-left: 16px;
+}
+
+.stripe {
+  margin-top: 8px;
+}
+.privacy {
+  margin-top: 8px;
+  margin-left: 8px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+input{
+    height: 30px;
+}
+
+.sign-button{
+    background-color: rgb(103,93,255);
+    border-radius: 6px;
+    border: none;
+    width: 412px;
+    height: 44px;
+}
+.two-way-step{
+    text-align: center;
+}
+
+.two-way-step > div{
+    border: 1px solid ;
+    padding: 5px 0;
+    margin-top: 2px;
+}
