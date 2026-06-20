@@ -1,0 +1,139 @@
+@import url(./svg.css);
+@import url(./base.css);
+.main{
+    height: 100vh;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    padding: 22px 16px;
+}
+.main{
+     margin: 0px 16px ;
+     position: relative;
+     height: 100vh;
+}
+.registration{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 14px 0px;
+    /* box-shadow: 0px 15px 35px 0px, rgba(0, 0, 0, 0.12); */
+    box-shadow: 0px 10px 35px 0px rgba(43, 46, 53, 0.3);
+    border-radius: 10px;
+}
+.registration-header{
+    margin-bottom: 12px;
+    padding: 0px 20px;
+}
+.registration-header span{
+    color: rgb(65, 69, 82);
+    font-size: 20px;
+    font-weight: 900;
+
+}
+.signup-google{
+    padding: 20px 20px 0px 20px;
+}
+.signup-google-session{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(39,57,81);
+    font-size: 18px;
+    min-height: 42px;
+    font-weight: 600;
+    width: 100%;
+    border: rgb(212, 222, 233);
+    border-style: solid;
+    border-width: 0.01px;
+    border-radius: 6px;
+}
+.signup-or-session{
+    padding: 24px 0px;
+    position: relative;
+}
+.seperator{
+    display: block;
+    padding: 1px 0px 0px 1px;
+    height: 1px;
+    background-color: rgb(212, 222, 233);
+}
+.or{
+    font-size: 14px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 18px;
+    background-color: white;
+    padding: 0px 10px;
+}
+.input-container{
+    padding: 4px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.input-area input,.input-area button {
+    width: 100%;
+     min-height: 42px;
+     border: rgb(212, 222, 233);
+    border-style: solid;
+    border-width: 0.01px;
+    border-radius: 6px;
+}
+.input-area select {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    width: 100%;
+    min-height: 42px;
+    border: rgb(212, 222, 233);
+    border-style: solid;
+    border-width: 0.01px;
+    border-radius: 6px;
+}
+
+.country-select{
+    padding-bottom: 12px;
+}
+.input-area button {
+    z-index: 10;
+    background-color: rgba(99, 91, 255,0.5);
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+.create-account{
+    padding: 0px 20px 16px 20px;
+}
+.spacer{
+    padding-bottom: 10px;
+}
+/* .footer{
+    margin-top: 80%;
+} */
+.bottom-footer{
+    margin: 0px 16px;
+    padding: 16px 0px 16px 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 8px;
+}
+.signin-area{
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    width: 100%;
+    min-height: 42px;
+}
+.signin-area span a{
+    text-decoration: none;
+    color: rgb(0, 0, 238);
+}
