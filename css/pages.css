@@ -10,21 +10,93 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 2px;
     margin-right: -2px;
+    gap: 28px;
 }
 
-.homepage-body > header > h2 {
-    font-size: 24px;
-    letter-spacing: 0px;
+.homepage-body > header > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.homepage-body > header > nav > button {
+.homepage-body > header > nav {
+    display: flex;
+    gap: 8px;
+}
+
+.homepage-body > header > nav > .hamburger-btn {
     border: none;
     border-radius: 5px;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.homepage-body > header > .nav-links {
+    display: none;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.homepage-body > header > .nav-links > li {
+    padding: 14px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.homepage-body > header > .nav-links button {
+    font-size: 14px;
+    font-family: var(--font-sohne);
+    font-feature-settings: "ss01";
+}
+
+.homepage-body > header > nav > .sign-in-btn {
+    display: none;
+}
+
+.homepage-body > header > nav > .contact-btn {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .homepage-body > header {
+        padding-left: 18px;
+        padding-right: 12px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .homepage-body > header {
+        padding-top: 6px;
+        padding-left: 20px;
+        justify-content: flex-start;
+    }
+
+    .homepage-body > header > nav {
+        margin-left: auto;
+    }
+
+    .homepage-body > header > nav > .hamburger-btn {
+        display: none;
+    }
+
+    .homepage-body > header > nav > .sign-in-btn {
+        display: flex;
+    }
+
+    .homepage-body > header > nav > .contact-btn {
+        display: flex;
+    }
+
+    .homepage-body > header > .nav-links {
+        display: flex;
+    }
 }
 
 .homepage-body > main > .hero {
