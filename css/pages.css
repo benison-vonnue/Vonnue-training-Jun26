@@ -1,17 +1,18 @@
 @import url(signup.css);
 
 .homepage-body {
-    padding-top: 12px;
-    padding-left: 14px;
-    padding-right: 14px;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 .homepage-body > header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 2px;
-    margin-right: -2px;
+    padding-top: 12px;
+    padding-bottom: 14px;
+    padding-left: 16px;
+    padding-right: 12px;
     gap: 28px;
     max-width: 1268px;
 }
@@ -112,18 +113,24 @@
     margin-right: -5px;
 }
 
+@media (min-width: 375px){
+    .homepage-body > header {
+        padding-right: 12px;
+    }
+}
+
 @media (min-width: 768px) {
     .homepage-body > header {
-        padding-left: 18px;
-        padding-right: 12px;
+        padding-left: 32px;
+        padding-right: 24px;
     }
 }
 
 @media (min-width: 1024px) {
     .homepage-body > header {
-        padding-top: 3px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-top: 15px;
+        padding-left: 34px;
+        padding-right: 34px;
         justify-content: flex-start;
         margin-left: auto;
         margin-right: auto;
@@ -159,27 +166,47 @@
 
 .homepage-body > main > .hero {
     height: 480px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    column-gap: 16px;
+    row-gap: 32px;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    position:relative;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-top: 72px;
+    padding-bottom: 88px;
+    tab-size: 4;
+}
+
+.homepage-body > main > .hero > .background {
+    position:absolute;
+    top:0;
 }
 
 .homepage-body > main > .hero > .hero-content {
-    padding: 0 2px;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    margin-top: 4.5px;
 }
 
 .homepage-body > main > .hero > .hero-content > p {
     font-size: 12px;
-    margin-bottom: 28px;
+    margin-bottom: 33px;
 }
 
 .homepage-body > main > .hero > .hero-content > h1 {
-    margin-bottom: 28px;
+    margin-bottom: 40px;
     font-weight: 400;
+    line-height: 35.02px;
+    color: #2d2564;
+    font-size: 34px;
+    font-weight: 300;
+    letter-spacing: -0.34px;
+
 }
 
 .homepage-body > main > .hero > .hero-content > a {
-    background-color: #6f00ff;
+    background-color: #4032c8;
     color: white;
     display: flex;
     justify-content: center;
@@ -190,6 +217,7 @@
 }
 
 .homepage-body > main > .hero > .marque {
+    position: absolute;
     height: 56px;
     border-top: 1px solid rgb(221, 221, 221);
     border-bottom: 1px solid rgb(221, 221, 221);
