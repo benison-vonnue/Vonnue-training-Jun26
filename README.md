@@ -4,17 +4,22 @@ This repository is used for the trainee assessment submissions.
 
 ## Assignment
 
-Clone the Stripe Sign Up page first and then proceed to clone additional sections of the Stripe website.
+Clone the assigned UI as accurately as possible by following the provided Figma design.
 
 ## Submission Instructions
 
 1. Clone the repository.
-2. Create a branch using your name.
+2. Create a branch using the following naming convention:
+
+```
+cp-1.5-firstname-lastname
+```
 
 Example:
 
-git checkout -b firstname-lastname
-
+```bash
+git checkout -b cp-1.5-john-doe
+```
 3. Complete the assignment.
 4. Commit your changes with meaningful commit messages.
 5. Push your branch.
