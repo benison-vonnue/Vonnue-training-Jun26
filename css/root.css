@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.font-playfair {
+  font-family: "Playfair Display";
+}
+
+:root {
+  --color-background: #f2ede6;
+  --color-primary: #1a1a1a;
+  --color-secondary: #fff;
+}
+
+body {
+  background-color: var(--color-background);
+  font-family: "DM Sans";
+  color: var(--color-primary);
+}
+
+button {
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+.none {
+  display: none !important;
+}
+

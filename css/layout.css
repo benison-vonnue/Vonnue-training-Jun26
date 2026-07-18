@@ -1,0 +1,138 @@
+main {
+  padding: 0 20px;
+  max-width: 896px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header Section */
+
+header {
+  height: 121px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+}
+
+header .extra-div {
+  display: none;
+  height: 16px;
+  width: 100%;
+}
+
+header h1 {
+  font-weight: 400;
+  font-size: 32px;
+  letter-spacing: -0.8px;
+  line-height: 40px;
+  color: var(--color-primary);
+}
+
+header p {
+  color: #7a7060;
+  font-size: 13px;
+  font-style: Regular;
+}
+
+@media (min-width: 768px) {
+  main {
+    padding: 0 40px;
+  }
+
+  header {
+    height: 162px;
+    gap: 12px;
+  }
+
+  header h1 {
+    font-size: 48px;
+    letter-spacing: -1.2px;
+  }
+
+  header p {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1440px) {
+  main {
+    padding: 0 32px;
+  }
+  header {
+    height: 192px;
+  }
+  header p {
+    font-style: 9pt Regular;
+  }
+  header .extra-div {
+    display: block;
+  }
+}
+
+.add-btn {
+  margin-top: 24px;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  height: 48;
+  width: 100%;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-btn button {
+  color: var(--color-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .add-btn {
+    width: 111px;
+    height: 36px;
+    gap: 6px;
+    padding: 0 16px;
+  }
+  .add-btn button p {
+    order: 1;
+  }
+
+  .add-btn button span {
+    order: 2;
+  }
+}
+
+.task-container {
+  margin-top: 24px;
+}
+
+.task-container .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-container .header h2 {
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 14px;
+}
+
+.task-container .header p {
+  font-style: Regular;
+  font-size: 11px;
+  color: #7a7060;
+}
+
+.task-inner-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 12px;
+  gap: 12px;
+}

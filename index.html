@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="extra-div"></div>
+        <h1 class="font-playfair">Task Manager</h1>
+        <p>Organize your work efficiently</p>
+      </header>
+      <section class="card-container">
+        <div class="card total">
+          <p>0</p>
+          <span>TOTAL</span>
+        </div>
+        <div class="card completedCard">
+          <p>0</p>
+          <span>COMPLETED</span>
+        </div>
+        <div class="card pending">
+          <p>0</p>
+          <span>PENDING</span>
+        </div>
+      </section>
+      <section class="add-btn">
+        <button id="openModal">
+          <span>
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.16602 9.99999H15.834M10 4.16599V15.834"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </span>
+          <p>Add Task</p>
+        </button>
+      </section>
+      <section class="task-container">
+        <div class="header">
+          <h2>Your Tasks</h2>
+          <p id="totalTask"><span>0</span>&nbsp;tasks</p>
+        </div>
+        <div class="task-inner-container" id="taskContainer"></div>
+      </section>
+    </main>
+    <section class="modal-container none" id="modal">
+      <div class="modal">
+        <div class="modal-header">
+          <h3>New Task</h3>
+          <button id="exitModal">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="32" height="32" rx="8" fill="#EBE6DE" />
+              <path
+                d="M20 12L12 20M12 12L20 20"
+                stroke="#1A1A1A"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="remark">All fields are required</div>
+        <form id="taskForm">
+          <div class="form-input">
+            <label for="name">Task Name</label>
+            <input id="name" name="name" type="text" />
+          </div>
+          <div class="form-input">
+            <label for="priority"> Priority </label>
+            <select name="priority" id="priority">
+              <option value="low">Low</option>
+              <option value="medium">Medium</option>
+              <option value="high">High</option>
+            </select>
+          </div>
+          <div class="form-input">
+            <label for="assignee"> Assignee </label>
+            <textarea id="assignee" name="assignee" type="text"></textarea>
+          </div>
+          <div class="form-input">
+            <label for="date"> Due Date </label>
+            <input id="data" name="date" type="date" />
+          </div>
+        </form>
+        <div class="add-btn">
+          <button type="submit" form="taskForm">
+            <span>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.16602 9.99999H15.834M10 4.16599V15.834"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </span>
+            <p>Add Task</p>
+          </button>
+        </div>
+      </div>
+    </section>
+    <div class="task-card none" id="taskCard">
+      <div class="task-card-header">
+        <h3>Create Login Page</h3>
+        <div class="priority high">
+          <svg
+            width="6"
+            height="6"
+            viewBox="0 0 6 6"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="3" cy="3" r="3" fill="currentColor" />
+          </svg>
+        </div>
+      </div>
+      <div class="task-card-content">
+        <p><span>ASSIGNED</span><span class="name">Rahul</span></p>
+        <p><span>DUE</span><span class="date">25-Aug-2026</span></p>
+        <p><span>STATUS</span><span class="status"></span></p>
+      </div>
+      <div class="task-card-action-container">
+        <button class="complete">
+          <svg
+            width="12"
+            height="12"
+            viewBox="0 0 12 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5.99951 1.49957C8.48479 1.49957 10.4995 3.51429 10.4995 5.99957C10.4995 8.48485 8.48479 10.4996 5.99951 10.4996C3.51423 10.4996 1.49951 8.48485 1.49951 5.99957C1.49951 3.51429 3.51423 1.49957 5.99951 1.49957Z"
+              stroke="#1A1A1A"
+              stroke-linecap="round"
+            />
+            <path
+              d="M4.5 6.00043L5.5 7.00043L7.5 5.00043"
+              stroke="#1A1A1A"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+        <button class="delete">
+          <svg
+            width="28"
+            height="28"
+            viewBox="0 0 28 28"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M9.5 11H18.5" stroke="#7A7060" stroke-linecap="round" />
+            <path
+              d="M17.4995 11V18C17.4995 18.5 16.9995 19 16.4995 19H11.4995C10.9995 19 10.4995 18.5 10.4995 18V11"
+              stroke="#7A7060"
+              stroke-linecap="round"
+            />
+            <path
+              d="M11.9995 10.9996V9.99957C11.9995 9.49957 12.4995 8.99957 12.9995 8.99957H14.9995C15.4995 8.99957 15.9995 9.49957 15.9995 9.99957V10.9996"
+              stroke="#7A7060"
+              stroke-linecap="round"
+            />
+            <path
+              d="M13.0005 13.4996V16.4996"
+              stroke="#7A7060"
+              stroke-linecap="round"
+            />
+            <path
+              d="M14.9995 13.4996V16.4996"
+              stroke="#7A7060"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
