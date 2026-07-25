@@ -1,15 +1,20 @@
-import { addCompleted, deleteCompleted } from "../utils.js";
+import { addCompleted, deleteCompleted, deletePending } from "../utils.js";
 
 export const init = () => {
   const taskContainer = document.querySelector("#taskContainer");
   taskContainer.addEventListener("click", (e) => {
-    if (e.target.classList.contains("complete")) {
-      e.target.parentElement.parentElement.classList.add("completed");
+    const btn = e.target.closest("button");
+    if (btn.classList.contains("complete")) {
+      btn.parentElement.parentElement.classList.add("completed");
       addCompleted();
     }
-    if (e.target.parentElement.parentElement.classList.contains("delete")) {
-      e.target.parentElement.parentElement.parentElement.parentElement.remove();
-      deleteCompleted();
+    if (btn.classList.contains("delete")) {
+      if (btn.parentElement.parentElement.classList.contains("completed")) {
+        deleteCompleted();
+      } else {
+        deletePending();
+      }
+      btn.parentElement.parentElement.remove();
     }
   });
 };

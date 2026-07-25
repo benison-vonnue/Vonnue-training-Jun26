@@ -1,9 +1,36 @@
 import { addPending } from "../utils.js";
 
+const validationFunction = {
+  required: (value) => {
+    return value !== "";
+  },
+  dueDate: (value) => {
+    const currentDate = new Date(Date.now());
+    const dueDate = new Date(value);
+    return dueDate >= currentDate;
+  },
+};
+
+const rules = {
+  name: ["required"],
+  priority: ["required"],
+  date: ["required", "dueDate"],
+  assignee: ["required"],
+};
+
+function checkRules(formData) {
+  Object.keys(rules).forEach((value) => {
+    const formValue = formData.get(value);
+    rules[value].forEach((rule) => {
+      if (validationFunction[rule](formValue)) {
+      }
+    });
+  });
+}
+
 export const handleFormSubmit = () => {
   const form = document.querySelector("#taskForm");
   const taskCard = document.querySelector("#taskCard");
-  const taskCardClone = taskCard.cloneNode(true);
   const taskContainer = document.querySelector("#taskContainer");
   const modal = document.querySelector("#modal");
 
@@ -14,11 +41,9 @@ export const handleFormSubmit = () => {
     const priority = formData.get("priority");
     const assignee = formData.get("assignee");
     const date = formData.get("date");
-    console.log(name, priority, assignee, date);
-    if (name === "") return;
-    if (priority === "") return;
-    if (assignee === "") return;
-    if (date === "") return;
+    const taskCardClone = taskCard.cloneNode(true);
+
+    // const obj =
 
     const setPriorty = (el, priority) => {
       const priorityElement = el.querySelector(".priority");

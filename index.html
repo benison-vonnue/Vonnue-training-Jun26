@@ -83,44 +83,58 @@
           <div class="form-input">
             <label for="name">Task Name</label>
             <input id="name" name="name" type="text" />
+            <span class="error none" id="errorName"
+              >This field is required</span
+            >
           </div>
           <div class="form-input">
             <label for="priority"> Priority </label>
             <select name="priority" id="priority">
-              <option value="low">Low</option>
-              <option value="medium">Medium</option>
               <option value="high">High</option>
+              <option value="medium">Medium</option>
+              <option value="low">Low</option>
             </select>
+            <span class="error none" id="errorPriority"
+              >This field is required</span
+            >
           </div>
           <div class="form-input">
             <label for="assignee"> Assignee </label>
             <textarea id="assignee" name="assignee" type="text"></textarea>
+            <span class="error none" id="errorAssignee"
+              >This field is required</span
+            >
           </div>
           <div class="form-input">
             <label for="date"> Due Date </label>
             <input id="data" name="date" type="date" />
+            <span class="error none" id="errorDate"
+              >This field is required</span
+            >
           </div>
         </form>
-        <div class="add-btn">
-          <button type="submit" form="taskForm">
-            <span>
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M4.16602 9.99999H15.834M10 4.16599V15.834"
-                  stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                />
-              </svg>
-            </span>
-            <p>Add Task</p>
-          </button>
+        <div class="action-area">
+          <div class="add-btn">
+            <button type="submit" form="taskForm">
+              <span>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.16602 9.99999H15.834M10 4.16599V15.834"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </span>
+              <p>Add Task</p>
+            </button>
+          </div>
         </div>
       </div>
     </section>
